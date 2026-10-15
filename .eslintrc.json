@@ -4,7 +4,7 @@
     "es2021": true,
     "jest": true
   },
-  "extends": ["airbnb", "airbnb-typescript", "airbnb/hooks"],
+  "extends": ["airbnb", "airbnb-typescript", "airbnb/hooks", "prettier"],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
