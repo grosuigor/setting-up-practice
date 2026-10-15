@@ -9,7 +9,7 @@ function App() {
         <p>
           Edit
           {' '}
-          <code>src/App.js</code>
+          <code>src/components/App/App.tsx</code>
           {' '}
           and save to reload.
         </p>
