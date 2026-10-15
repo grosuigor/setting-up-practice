@@ -1,0 +1,40 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "airbnb/hooks"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@components", "./src/components"],
+          ["@pages", "./src/pages"],
+          ["@styles", "./src/styles"],
+          ["@assets", "./src/assets"]
+        ],
+        "extensions": [".js", ".jsx", ".scss", ".css", ".svg"]
+      }
+    }
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    "build/",
+    "coverage/",
+    "scripts/",
+    "config/"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "import/prefer-default-export": "off"
+  }
+}
